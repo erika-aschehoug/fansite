@@ -1,0 +1,335 @@
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    
+  }
+  
+  .site-header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   background-image: url(images/40684667-résumé-cristaux-violets-étincelante-de-texture-fond-horizontal-noël.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+    align-items: center;
+    font-size: 130%;
+  
+    
+  }
+  
+  .site-identity h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+  }
+  
+  
+  .site-navigation ul, 
+  .site-navigation li {
+    margin: 0; 
+    padding: 0;
+    text-align: right;
+   
+  }
+  
+  .site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+  }
+
+  .footer-modif{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgb(48, 10, 151) 0px 20px 15px 16px;
+    
+    }
+
+    .réseaux {
+      text-align: right;
+    }
+
+
+      h1  {
+        color: #030308;
+        width: 100%;
+      }
+
+
+/* carroussel */
+
+
+body {
+  /* min-height: 100vh; */
+  display: grid;
+  /*place-items: center;*/ 
+   background: #100721;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  background: linear-gradient(180deg, white, white 33.33%, rgb(125, 63, 216) 33.33%, violet 66.66%, white 66.66%);
+  /* width: 100%; */
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://media.nrj.fr/raw/2019/08/lady-gaga-ses-clips-qui-cartonnent-sur-youtube-1565786405.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://hips.hearstapps.com/hmg-prod/images/lady-gaga-novio-1577961801.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://www.vogue.cz/assets/0461a80e-f3f5-453c-9023-3e13bd83f20d/001-Lady-Gaga-Album-VogueGlobe-Mar2.jpg?w=768&q=90")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://media.cnn.com/api/v1/images/stellar/prod/211110095522-01-lady-gaga-red-carpet-house-of-gucci.jpg?q=w_2680,h_3000,x_0,y_0,c_fill")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+p {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.582) 0px 30px 60px -30px;
+  width: 28%;
+}
+
+main {
+  margin: 3%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 3%;
+}
+      
+.blocleft {
+  display: block;
+  float: right;
+  flex-direction: right;
+  text-align: right;
+  width: 30%;
+  background-color: #7645d8;
+  border-top:solid  #000000;
+  border-left:solid #000000;
+  border-right:solid yellow;
+  border-bottom: solid yellow;
+
+  border-width: 6px;
+  padding: 20px;
+}
+
+img {
+  width: 60%;
+
+}
+
+/* formulaire de contact */
+
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid rgb(94, 40, 174, 255, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label{margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;}
+
+input[type=submit] {
+  background-color: #6812a2;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1872D9;
+}
+
+h2 {
+  margin-bottom: 4%;
+}
+
+#blocright {
+  background-color: violet;
+  border-right: solid black;
+  border-top: solid black;
+  border-bottom:solid yellow;
+  border-left:solid yellow;
+  border-width: 6px;
+  padding: 20px;
+
+}
+
+.nav  {
+  text-decoration: none; 
+  background-color: transparent; 
+  color: #000; 
+  transition: background-color 0.3s, color 0.3s; 
+  border-radius: 3%;
+}
+.nav:hover, .nav:focus {
+  background-color: rgba(153, 0, 255, 0.29); 
+  color: #fff; 
+  border-radius: 3%;
+}
+
+.png {
+  width: 13%;
+align-items: center;
+display: flex
+
+}
+
+#bloc {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*Pages Réalisations*/
+
+.photo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;             /*positionnement images albums */
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.album1 {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  height: 20%;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* carroussel photo*/
+
+.image {
+  display: inline-block;
+  width: 190px; 
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px; 
+  animation: scroll 8s linear infinite; 
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%); 
+  }
+}
+
+/*hover */
+
+.photo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+ 
+  
+  
+}
+
+.imgrea { width: 250px;
+  height: 250px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20%;
+}
+
+

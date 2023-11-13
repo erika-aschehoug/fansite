@@ -1,0 +1,24 @@
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.image {
+    display: inline-block;
+    width: 300px; /* Ajustez la largeur de vos images */
+    height: 200px; /* Ajustez la hauteur de vos images */
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px; /* Espacement horizontal entre les images */
+    animation: scroll 10s linear infinite; /* 10s de durée d'animation, ajustez selon vos besoins */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Défilement horizontal complet */
+    }
+}
